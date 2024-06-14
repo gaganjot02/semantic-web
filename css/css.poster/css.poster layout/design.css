@@ -1,0 +1,113 @@
+.container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .header {
+    width: 1170px;
+    height: 450px;
+    background-image: linear-gradient(to bottom, #ffe537, #acea8a)
+
+}
+.container .header .text-location{
+    position: absolute;
+    top:100px;
+    right:250px;
+    font-style: oblique;
+    word-spacing: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container .header .text-location1{
+    position: absolute;
+    top:30px;
+    right:1180px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container .contentrow{
+    width: 1170px;
+    height: 200px;
+    background-color: antiquewhite;
+
+}
+
+.container .contentrow1 {
+    width: 1170px;
+    height: 80px;
+    background-color: yellow;
+
+}
+
+.container .contentrow2 {
+    width: 1170px;
+    height: 300px;
+    background-color: antiquewhite;
+
+}
+
+.container .contentrow3 {
+    width: 1170px;
+    height: 200px;
+    background-color: antiquewhite;
+
+}
+.container .contentrow3 .content11 {
+    width: 350px;
+    height: 200px;
+    background-color:rgba(206, 225, 32, 0.612);
+    float: left;
+}
+.container .contentrow3 .content12 {
+    width: 470px;
+    height: 250px;
+    background-color: rgb(185, 106, 112);
+    float: left;
+    margin-top:-20px;
+}
+
+.container .contentrow3 .content13 {
+    width: 350px;
+    height: 200px;
+    background-color:rgb(99, 92, 199);
+    float: left;
+}
+.container .contentrow4 {
+    width: 1170px;
+    height: 500px;
+    background-color:antiquewhite;
+
+}
+.container .contentrow4 .content14 {
+    width: 400px;
+    height: 200px;
+    margin-left:100px;
+    padding: 20px;
+    margin-top:150px;
+    background-color: aquamarine;
+    float:left;
+}
+.container .contentrow4 .content15 {
+    width: 450px;
+    height: 100px;
+    margin-left:50px;
+    padding:5px;
+    margin-top:150px;
+    background-color: rgb(113, 57, 93);
+    float:left;
+}
+.container .contentrow4 .content16 {
+    width: 450px;
+    height: 100px;
+    margin-left:590px;
+padding:5px;
+    margin-top:-110px;
+    background-color: rgb(152, 233, 66);
+    float:left;
+}
+.container .contentrow5 {
+    width: 1170px;
+    height: 500px;
+    background-color:black;
+
+}
