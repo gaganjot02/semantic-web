@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/parmi/ontologies/2024/6/school#"
+     xml:base="http://www.semanticweb.org/parmi/ontologies/2024/6/school"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:school="http://www.semanticweb.org/parmi/ontologies/2024/6/school#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Studies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Subject"/>
+        <rdfs:comment xml:lang="en">Student studies the subject</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#admits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#admits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <rdfs:comment xml:lang="en">school admits the students</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+        <rdfs:comment xml:lang="en">school employs the teacher</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#teaches">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <rdfs:comment xml:lang="en">Teacher Teaches the student</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Studentid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Studentid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#joined_on -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#joined_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">This is the date on which the student has joined</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#teacherid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#teacherid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Administrator">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#management"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Non-Teaching_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Non-Teaching_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Supporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Supporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teaching_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teaching_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#junior_Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#junior_Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Non-Teaching_Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#school -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school">
+        <rdfs:comment xml:lang="en">This is an ontology about the school</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#senior_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#senior_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#staff"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gagan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gagan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <Studentid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1001</Studentid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gurleen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gurleen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Student"/>
+        <Studentid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1002</Studentid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Miss.Julia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Miss.Julia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+        <teacherid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1004</teacherid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#Mr.John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Mr.John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Teacher"/>
+        <teaches rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gagan"/>
+        <teaches rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gurleen"/>
+        <teacherid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1003</teacherid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/parmi/ontologies/2024/6/school#international_school -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/parmi/ontologies/2024/6/school#international_school">
+        <rdf:type rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#school"/>
+        <admits rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gagan"/>
+        <admits rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Gurleen"/>
+        <employs rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Miss.Julia"/>
+        <employs rdf:resource="http://www.semanticweb.org/parmi/ontologies/2024/6/school#Mr.John"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
